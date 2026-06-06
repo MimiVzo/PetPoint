@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+}
+
+body {
+    background: url("../img/Img_Citas.jpg") center / cover no-repeat;
+    min-height: 100vh;
+}
+
+/* CONTENEDOR GENERAL */
+.contenido{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+/* TARJETAS */
+.content-1,
+.content-2{
+    background-color: #e4adcc;
+    border-radius: 20px;
+    padding: 20px;
+    flex: 1;
+    min-width: 320px;
+    max-width: 600px;
+}
+
+/* TITULOS */
+h1{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    color: #0e543b;
+    margin-bottom: 15px;
+}
+
+/* CAJAS INTERNAS */
+.dat-1,
+.dat-2{
+    background-color: #dbdbdb;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* INPUTS */
+.datos,
+.datos-mascota1,
+.datos-mascota2,
+.date,
+.time{
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: 3px solid #a64d80;
+    background-color: #f8d9e2;
+    font-size: 16px;
+    outline: none;
+}
+
+/* FILAS */
+.fila{
+    display: flex;
+    gap: 10px;
+}
+
+/* SERVICIO */
+.servicios{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8d9e2;
+    border: 3px solid #a64d80;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+select{
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    color: #c4195b;
+}
+
+/* BOTON */
+.btn-agregar{
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    background-color: #c4195b;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn-agregar:hover{
+    background-color: #ae1345;
+    box-shadow: 0 0 20px #c4195b;
+}
+
+/* MENSAJE */
+.mensaje{
+    font-size: 20px;
+    color: #0e543b;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* BOTON SERVICIOS */
+.btn-servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    gap: 10px;
+    margin: 10px;
+}
+
+.btn-servicio img{
+    width: 80px;
+    background-color: #c4195b;
+    border-radius: 10px;
+    padding: 10px;
+}
+.btn-servicio img:hover{
+    background-color: #ad0e3e;
+    box-shadow: 0 0 40px #c4195b;
+}
+
+/* BOTON REGRESO */
+.btn-regreso{
+    position: absolute;
+    top: 90%;
+    right: 40px;
+}
+
+.btn-regreso img{
+    width: 90px;
+    background: #c4195b;
+    border-radius: 10px;
+    padding: 10px;
+}
+.btn-regreso img:hover{
+    background-color: #ad0e3e;
+    box-shadow: 0 0 40px #c4195b;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 768px){
+
+    body{
+        min-height: 113vh;
+    }
+    .contenido{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .fila{
+        flex-direction: column;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+    .btn-regreso{
+        top: 105%;
+        right: 20px;
+    }
+    .btn-regreso img{
+    width: 70px;
+    }
+}

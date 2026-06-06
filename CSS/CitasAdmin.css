@@ -1,0 +1,238 @@
+*{
+    font-family: "Fredoka", sans-serif;
+}
+body {
+    font-family: "Fredoka", sans-serif;
+    background-image: url(../img/Img_Citas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    font-size: 80px;
+}
+.tabla{
+    justify-items: center;
+    margin: 30px;
+}
+table{
+    padding: 80px;
+    padding-top: 40px;
+    background-color: #efcde0;
+    font-size: 35px;
+    border-radius: 20px;
+    text-align: center;
+}
+/* Encabezado */
+.filas {
+    border-right: #ad0e3e solid 4px;
+    padding: 15px;
+    color: #00442b;
+}
+.ult-fila{
+    padding: 15px;
+    border-right: #ad0e3e solid 4px;
+    color: #00442b;
+}
+/* Colunas */
+.fila{
+    padding: 15px;
+    border-top: #ad0e3e solid 4px;
+    border-right: #ad0e3e solid 4px;
+}
+.utl-fila_1{
+    border-top: #ad0e3e solid 4px;
+    border-right: #ad0e3e solid 4px;
+    padding: 15px;
+}
+
+/* BOTON EDITAR */
+.btn-edit img{
+    background-color: #f35b89;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+}
+.btn-edit img:hover{
+    text-decoration: none;
+    display: inline-block;
+    background-color: #c4195b;
+    box-shadow: 0 0 20px #ad0e3e;
+}
+.btn-edit{
+    text-decoration: none;
+}
+
+/* BOTON BORRAR CITAS */
+.btn-borrar{
+    display: flex;
+    background-color: #c4195b;
+    height: auto;
+    width: 30%;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+}
+.btn-borrar img{
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    align-self: center;
+    justify-self: center;
+}
+.btn-borrar:hover{
+    background-color: #ad0e3e;
+    box-shadow: 0 0 20px #ad0e3e;
+}
+
+/* BOTON REGRESO */
+.btn{
+    justify-self: end;
+    align-self: end;
+}
+.btn-servicio{
+    display: inline-block;
+    text-decoration: none;
+}
+.btn-servicio img{
+    height: 50px;
+    width: 50px;
+    background-color: #c4195b;
+    justify-self: end;
+    align-self: end;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px;
+}
+.btn-servicio img:hover{
+    background-color: #ad0e3e;
+    box-shadow: 0 0 20px #ad0e3e;
+}
+
+/*PANTALLA VISTA TABLET*/
+@media (max-width: 1024px){
+    h1{
+        text-align: center;
+        font-size: 65px;
+        color: #c4195b;
+    }
+    .tabla{
+        justify-items: center;
+        margin: 20px;
+    }
+    table{
+        padding: 5px;
+        background-color: #efcde0;
+        font-size: 25px;
+        border-radius: 20px;
+        text-align: center;
+    }
+    /* Encabezado */
+    .filas {
+        border-right: #ad0e3e solid 3px;
+        padding: 15px;
+        color: #00442b;
+    }
+    .ult-fila{
+        padding: 15px;
+        border-right: #ad0e3e solid 3px;
+        color: #00442b;
+    }
+    /* Colunas */
+    .fila{
+        padding: 15px;
+        border-top: #ad0e3e solid 3px;
+        border-right: #ad0e3e solid 3px;
+    }
+    .utl-fila_1{
+        border-top: #ad0e3e solid 3px;
+        border-right: #ad0e3e solid 3px;
+        padding: 15px;
+    }
+    .btn-servicio{
+        left: 85%;
+        top: 80%;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 768px){
+    body{
+        height: 100vh;
+    }
+    h1{
+        text-align: center;
+        font-size: 60px;
+    }
+    .tabla{
+        justify-items: center;
+        margin: 10px;
+    }
+    table{
+        padding: 5px;
+        background-color: #efcde0;
+        font-size: 12px;
+        border-radius: 20px;
+        text-align: center;
+    }
+    /* Encabezado */
+    .filas {
+        border-right: #ad0e3e solid 2px;
+        padding: 2px;
+        color: #00442b;
+    }
+    .ult-fila{
+        padding: 2px;
+        border-right: #ad0e3e solid 2px;
+        color: #00442b;
+    }
+    /* Colunas */
+    .fila{
+        padding: 2px;
+        border-top: #ad0e3e solid 2px;
+        border-right: #ad0e3e solid 2px;
+    }
+    .utl-fila_1{
+        border-top: #ad0e3e solid 2px;
+        border-right: #ad0e3e solid 2px;
+        padding: 2px;
+    }
+    /* BOTON REGRESO */
+    .btn-servicio{
+        left: 70%;
+        top: 85%;
+    }
+    /* BOTON EDITAR */
+    .btn-edit img{
+        background-color: #f35b89;
+        border-radius: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-decoration: none;
+        width: 20px;
+        height: 20px;
+    }
+    .btn-edit img:hover{
+        text-decoration: none;
+        display: inline-block;
+        background-color: #c4195b;
+        box-shadow: 0 0 20px #ad0e3e;
+    }
+    .btn-edit{
+        text-decoration: none;
+    }
+    .btn-borrar{
+        font-size: 25px;
+    }
+}

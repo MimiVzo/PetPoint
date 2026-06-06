@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+}
+
+/* FONDO */
+body {
+    background-image: url(../img/Img_Citas.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* TITULO */
+h1{
+    text-align: center;
+    font-size: 90px;
+    margin: 20px 0;
+}
+
+/* CONTENEDOR */
+.Contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    background-color: #efcde0;
+    border-radius: 20px;
+}
+
+/* IZQUIERDA */
+.lado-izq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+/* PERFIL */
+.img-perfil{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #c4195b;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+
+/* DATOS */
+.datos{
+    width: 55%;
+    border-left: 5px solid #ad0e3e;
+    padding-left: 30px;
+}
+
+/* TEXTOS */
+.dat{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.usuario{
+    font-size: 35px;
+    color: #001f44;
+}
+
+/* BOTON */
+.btn-servicio{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.btn-servicio img{
+    width: 100px;
+    background: #c4195b;
+    border-radius: 10px;
+    padding: 10px;
+}
+.btn-servicio img:hover{
+    background-color: #ad0e3e;
+}
+
+/* BOTON */
+.btn-guardar {
+    display: block;
+    margin: 30px auto;
+    padding: 15px 40px;
+    background-color: #c4195b;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-g{
+    text-decoration: none;
+}
+
+.btn-guardar:hover{
+    background-color: #ad0e3e;
+}
+
+
+/* TABLET */
+@media (max-width: 1024px){
+
+    .Contenido{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .lado-izq{
+        width: 100%;
+    }
+
+    .datos{
+        width: 100%;
+        border-left: none;
+        border-top: 5px solid #ad0e3e;
+        padding-top: 20px;
+    }
+
+    .dat{
+        font-size: 30px;
+    }
+
+    .usuario{
+        font-size: 28px;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 768px){
+
+    h1{
+        font-size: 60px;
+    }
+
+    .img-perfil{
+        width: 200px;
+        height: 200px;
+    }
+
+    .img-edit{
+        width: 40px;
+    }
+
+    .dat{
+        font-size: 25px;
+    }
+
+    .usuario{
+        font-size: 25px;
+    }
+}

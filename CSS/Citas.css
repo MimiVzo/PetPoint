@@ -1,0 +1,139 @@
+*{
+    font-family: "Fredoka", sans-serif;
+}
+body {
+    font-family: "Fredoka", sans-serif;
+    background-image: url(../img/Img_Citas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    padding: auto;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    font-size: 80px;
+}
+.tabla{
+    justify-items: center;
+}
+table{
+    margin: 15px;
+    padding: 80px;
+    padding-top: 40px;
+    background-color: #efcde0;
+    font-size: 35px;
+    color: #00442b;
+    border-radius: 20px;
+    text-align: center;
+}
+.filas {
+    border-right: #ad0e3e solid 4px;
+    padding: 15px;
+}
+.ult-fila{
+    padding: 15px;
+    border-right: #ad0e3e solid 4px;
+}
+.utl-fila_1{
+    padding: 15px;
+    border-top: #ad0e3e solid 4px;
+    border-right: #ad0e3e solid 4px;
+}
+.fila{
+    padding: 15px;
+    border-top: #ad0e3e solid 4px;
+    border-right: #ad0e3e solid 4px;
+}
+
+/* BOTON */
+.btn-servicio{
+    display: grid;
+    justify-self: end;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.btn-servicio img{
+    width: 60px;
+    background: #c4195b;
+    border-radius: 10px;
+    padding: 10px;
+}
+.btn-servicio img:hover{
+    background-color: #ad0e3e;
+}
+
+/* TABLET */
+@media (max-width: 1024px){
+    h1{
+        text-align: center;
+        font-size: 60px;
+        font-weight: 800;
+    }
+    .tabla{
+        justify-items: center;
+    }
+    table{
+        margin: 15px;
+        padding: 10px;
+        background-color: #efcde0;
+        font-size: 22px;
+        color: #00442b;
+        border-radius: 20px;
+        text-align: center;
+    }
+    .filas {
+        border-right: #ad0e3e solid 3px;
+        padding: 10px;
+    }
+    .ult-fila{
+        padding: 10px;
+        border-right: #ad0e3e solid 3px;
+    }
+    .utl-fila_1{
+        padding: 10px;
+        border-top: #ad0e3e solid 3px;
+        border-right: #ad0e3e solid 3px;
+    }
+    .fila{
+        padding: 10px;
+        border-top: #ad0e3e solid 3px;
+        border-right: #ad0e3e solid 3px;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 768px){
+    .tabla{
+        justify-items: center;
+    }
+    table{
+        margin: 15px;
+        padding: 2px;
+        background-color: #efcde0;
+        font-size: 16px;
+        color: #00442b;
+        border-radius: 20px;
+        text-align: center;
+    }
+    .filas {
+        border-right: #ad0e3e solid 2px;
+        padding: 2px;
+    }
+    .ult-fila{
+        padding: 2px;
+        border-right: #ad0e3e solid 2px;
+    }
+    .utl-fila_1{
+        padding: 2px;
+        border-top: #ad0e3e solid 2px;
+        border-right: #ad0e3e solid 2px;
+    }
+    .fila{
+        padding: 2px;
+        border-top: #ad0e3e solid 2px;
+        border-right: #ad0e3e solid 2px;
+    }
+}

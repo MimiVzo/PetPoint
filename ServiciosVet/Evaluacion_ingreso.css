@@ -1,0 +1,758 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+}
+
+body {
+    font-family: "Fredoka", sans-serif;
+    background: #fff7ee;
+    background-image: url(../img/Img_Citas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    margin: 0;
+    padding:24px 16px;
+}
+/* Cart Datos */
+.app{
+    max-width:820px;
+    margin:0 auto;
+    background:#efcde0;
+    border-radius:16px;
+    padding:24px;
+}
+.screen{
+    display:none
+}
+.screen.active{
+    display:block
+}
+ 
+h2{
+    font-size:40px;
+    font-weight:700;
+    margin-bottom:4px
+}
+h3{
+    font-size:15px;
+    font-weight:700;
+    color:#2c1a2e;
+    margin-bottom:10px
+}
+/* Botones */
+.btn-primary{
+ border: none;
+    background: #c4195b;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.btn-primary:hover{
+    background-color: #c4195b;
+    box-shadow: 0 0 20px #c4195b;
+    color: #dad8d8;
+}
+.btn-primary:disabled{
+    background:#e8a8c0;
+    cursor:not-allowed
+}
+.btn-sec{
+    padding:10px 20px;
+    border-radius:10px;
+    background: #c4195b;
+    color:#fff;
+    border: none;
+    font-size:16px;
+    cursor:pointer;
+    transition:all .15s
+}
+.btn-sec:hover{
+    background-color: #c4195b;
+    box-shadow: 0 0 20px #c4195b;
+    color: #dad8d8;
+}
+/* boton Regreso */
+.btn-back{
+    background: #c4195b;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+}
+.btn-back:hover{
+        background-color: #c4195b;
+    box-shadow: 0 0 20px #c4195b;
+    color: #dad8d8;
+}
+/* boton eliminar evaluacion*/
+.btn-sm{
+    padding:8px 12px;
+    border-radius:7px;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+    border:1px solid;
+    transition:all .15s
+}
+.btn-del{
+    background:#c4195b;
+    border: none;
+    color:#fff
+}
+.btn-del:hover{
+         background-color: #c4195b;
+    box-shadow: 0 0 20px #c4195b;
+    color: #dad8d8;
+    
+}
+
+
+/* Listado 1,2,3,4 Evaluacion */
+.steps{
+    display:flex;
+    gap:0;
+    margin-bottom:24px;
+    border-radius:10px;
+    overflow:hidden;
+    border:2px solid #a64d80
+}
+.step{
+    flex:1;
+    padding:9px 6px;
+    text-align:center;
+    font-size:18px;
+    font-weight:600;
+    color:#ad0e3e;
+    background:#ffdde7;
+    border-right:2px solid #a64d80;
+    cursor:default;transition:all .2s
+}
+.step:last-child{
+    border-right:none
+}
+.step.done{
+    background:#e494c1;
+    color:#fff
+}
+.step.active{
+    background:#f35b89;
+    border: solid 2px #ff6799;
+    color:white
+}
+
+/* BOTON REGRESO SERVICIOS*/
+.btn{
+    justify-self: end;
+    align-self: end;
+}
+.btn-servicio{
+    display: inline-block;
+    text-decoration: none;
+}
+.btn-servicio img{
+    height: 80px;
+    width: 80px;
+    background-color: #c4195b;
+    justify-self: end;
+    align-self: end;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px;
+}
+.btn-servicio img:hover{
+    background-color: #ad0e3e;
+    box-shadow: 0 0 20px #ad0e3e;
+}
+
+
+/* Buscador */
+.search{
+    padding:9px 10px;
+    border-radius:9px;
+    border:2px solid #a64d80;
+    background:#ffdde7;
+    font-size:13px;
+    color:#2c1a2e;
+    outline:none;
+    width:260px;
+    transition:border-color .15s
+}
+.search::placeholder{
+    color: #ad0e3e;
+    font-size: 13px;
+    font-weight: 500;
+}
+.search:focus{
+    border-color:#c97aaa
+}
+
+/* Estados */
+.li-estado{
+    width:185px;
+    padding:9px 12px;
+    border-radius:9px;
+    border:2px solid #a64d80;
+    font-size:13px;
+    outline:none;
+    color: #ad0e3e;
+    font-weight: 500;
+}
+option{
+    color: #001f44;
+}
+
+/* Cards evaluaciones */
+.eval-card{
+    background:#ffdde7;
+    border-radius:12px;
+    border:2px solid #a64d80;
+    padding:14px 16px;
+    margin-bottom:10px;
+    cursor:pointer;
+    transition:border-color .2s,background .2s
+}
+.eval-card:hover{
+    border-color:#c97aaa;
+    background:#e4acce
+}
+.eval-header{
+    display:flex;
+    align-items:center;
+    gap:12px
+}
+.eval-avatar{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    background:#e26d94;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:40px;
+    font-weight:700;
+    flex-shrink:0
+}
+.eval-info{
+    flex:1
+}
+.eval-name{
+    font-size:24px;
+    font-weight:500;
+}
+.eval-meta{
+    font-size:18px;
+    color:#ad0e3e;
+    margin-top:2px;
+    font-weight: 500;    
+}
+.eval-right{
+    text-align:right
+}
+.eval-date{
+    font-size:14px;
+    color:#001f44;
+}
+.eval-status{
+    font-size:14px;
+    font-weight:500;
+    margin-top:3px
+}
+/* DAT H1 */
+.sep{
+    font-size:20px;
+    font-weight:700;
+    color:#c4195b;
+    padding-bottom:6px;
+    border-bottom:2px solid #a64d80;
+    margin-bottom:14px;
+    text-transform:uppercase;
+    letter-spacing:.6px;
+}
+.lbl{
+    font-size:16px;
+    font-weight:700;
+    color:#001f44;
+    text-transform:uppercase;
+    letter-spacing:.5px;
+    margin-bottom:6px;
+    display:block;
+}
+/* inputs datos */
+.f input{
+    background: #ffecf8;
+    color: #c4195b;
+    font-weight: 500;
+    font-size: 14px;
+}
+.f select{
+    background: #ffecf8;
+    color: #c4195b;
+    font-weight: 500;
+    font-size: 14px;
+}
+.f input::placeholder{
+    font-weight: 500;
+   color: #c4195b;
+   font-size: 14px;
+}
+/* Carta ALL */
+.card{
+    background:#f5ecf2;
+    border-radius:14px;
+    border:2px solid #a64d80;
+    padding:18px 20px;
+    margin-bottom:14px
+}
+
+
+/* Cart Estado general */
+.e-btn{
+    padding:7px 14px;
+    border-radius:20px;
+    border:2px solid #a64d80;
+    background:#f0e6f6;
+    font-size:14px;
+    color:#7a4a6a;
+    cursor:pointer;
+    font-weight:500;
+    transition:all .15s
+}
+.e-btn:hover{
+    border-color:#c97aaa
+}
+.estado-grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-bottom:4px
+}
+
+.e-verde{
+    background:#c0dd97;
+    border-color:#639922;
+    color:#27500a
+}
+.e-amarillo{
+    background:#fac775;
+    border-color:#ba7517;
+    color:#633806
+}
+.e-rojo{
+    background:#f7c1c1;
+    border-color:#e24b4a;
+    color:#791f1f
+}
+.e-azul{
+    background:#b5d4f4;
+    border-color:#378add;
+    color:#0c447c
+}
+/* Anomalias */
+.anom-grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:7px;
+    margin-bottom:4px
+}
+.a-btn{
+    padding:6px 12px;
+    border-radius:16px;
+    border:2px solid #a64d80;
+    background:#f0e6f6;
+    font-size:14px;
+    color:#7a4a6a;
+    cursor:pointer;
+    font-weight:500;
+    transition:all .15s;
+} 
+.a-btn:hover{
+    border-color:#c97aaa
+}
+.a-on-verde{
+    background:#c0dd97;
+    border-color:#639922;
+    color:#27500a
+}
+.a-on-amarillo{
+    background:#fac775;
+    border-color:#ba7517;
+    color:#633806
+}
+.a-on-rojo{
+    background:#f7c1c1;
+    border-color:#e24b4a;
+    color:#791f1f
+}
+.a-on-rosa{
+    background:#f4c0d1;
+    border-color:#d4537e;
+    color:#72243e
+}
+
+
+/* val Evaluacion */
+.info-val{
+    font-size:14px;
+    font-weight: 500;
+    line-height:1.6
+}
+ 
+
+.row3{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:12px;margin-bottom:14px
+}
+.f{
+    margin-bottom:14px
+}
+.topbar{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:18px;
+    flex-wrap:wrap
+}
+.topbar h2{
+    margin-bottom:0
+}
+ 
+input,select,textarea{
+    width:100%;
+    padding:9px 12px;
+    border-radius:9px;
+    border:2px solid #a64d80;
+    background:#ffdde7;
+    font-size:13px;
+    outline:none;
+    transition:border-color .15s
+}
+input:focus,select:focus,textarea:focus{
+    border-color:#f0dae8
+}
+
+textarea{
+    resize:vertical;
+    min-height:64px;
+    line-height:1.5
+}
+select{
+    appearance:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23c97aaa'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;
+    background-position:right 10px center
+}
+input[type=time],input[type=number]{
+    width:auto
+}
+ 
+
+
+
+
+ 
+.badge{
+    display:inline-block;
+    padding:3px 9px;
+    border-radius:10px;
+    font-size:11px;
+    font-weight:600;
+    margin:2px
+}
+.bp{
+    background:#f4c0d1;
+    color:#72243e
+}
+.bb{
+    background:#b5d4f4;
+    color:#0c447c
+}
+.bg{
+    background:#c0dd97;
+    color:#27500a
+}
+.bo{
+    background:#fac775;
+    color:#633806
+}
+.br{
+    background:#f7c1c1;
+    color:#791f1f
+}
+.bgray{
+    background:#d3d1c7;
+    color:#444441
+}
+ 
+
+ 
+
+ 
+/* Cart signos vitales */
+.vital-card{
+    background:#fdf0f7;
+    border-radius:10px;
+    border:1px solid #a64d80;
+    padding:8px 8px;
+}
+.vital-row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:8px
+}
+.vital-row:last-child{
+    margin-bottom:0
+}
+.vital-label{
+    font-size:14px;
+    color:#001f44;
+    font-weight:600;
+    min-width:130px
+}
+.vital-input{
+    width:60px;
+    padding:6px 10px;
+    border-radius:8px;
+    border:1.5px solid #a36287;
+    background:#ffdde7;
+    font-size:13px;
+    color:#c4195b;
+    font-weight: 500;
+    outline:none
+}
+.vital-input::placeholder{
+    color: #c4195b;
+}
+.vital-input select{
+    width: 10px;
+}
+.vital-input:focus{
+    border-color:#c97aaa
+}
+.vital-unit{
+    font-size:14px;
+    color:#001f44;
+    font-weight: 500;
+}
+.row2{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+    margin-bottom:14px
+}
+.f textarea::placeholder{
+    color: #c4195b;
+    font-size: 16px;
+    font-weight: 500;
+}
+.f textarea{
+    background: #ffecf8;
+    border: 2px solid #a64d80;
+    color: #c4195b;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.status-verde{
+    color:#27500a
+}
+.status-amarillo{
+    color:#633806
+}
+.status-rojo{
+    color:#791f1f
+}
+ 
+.chip-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+}
+.chip{
+    padding:5px 11px;
+    border-radius:14px;
+    font-size:12px;
+    font-weight:600
+}
+.chip-verde{
+    background:#c0dd97;
+    color:#27500a
+}
+.chip-amarillo{
+    background:#fac775;
+    color:#633806
+}
+.chip-rojo{
+    background:#f7c1c1;
+    color:#791f1f
+}
+.chip-azul{
+    background:#b5d4f4;
+    color:#0c447c
+}
+.chip-rosa{
+    background:#f4c0d1;
+    color:#72243e
+}
+.chip-gray{
+    background:#d3d1c7;
+    color:#444441
+}
+/* cuadros signos vitales */
+.vital-display{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+    gap:10px
+}
+.vd-card{
+    background:#fdf0f7;
+    border-radius:9px;
+    padding:10px 12px;
+    border:1px solid #a64d80
+}
+.vd-val{
+    font-size:18px;
+    font-weight:700;
+    color:#c05a8a
+}
+.vd-lbl{
+    font-size:13px;
+    color:#7a5a72;
+    margin-top:2px
+}
+ 
+.ok-bar{
+    background:#d4eddf;
+    border-radius:9px;
+    padding:11px 16px;
+    text-align:center;
+    border:1px solid #5dcaa5;
+    margin-bottom:14px;
+    display:none
+}
+.ok-bar p{
+    color:#085041;
+    font-weight:700;
+    font-size:13px
+}
+.err-bar{
+    background:#fee2e2;
+    border-radius:9px;
+    padding:11px 16px;
+    text-align:center;
+    border:1px solid #f09595;
+    margin-bottom:14px;
+    display:none
+}
+.err-bar p{
+    color:#791f1f;
+    font-weight:700;
+    font-size:13px
+}
+ 
+
+.empty{
+    text-align:center;
+    padding:32px;
+    color:#9a7a8a;
+    font-size:13px
+}
+ 
+
+ 
+.spinner{
+    display:inline-block;
+    width:14px;
+    height:14px;
+    border:2px solid rgba(255,255,255,.4);
+    border-top-color:white;border-radius:50%;
+    animation:spin .6s linear infinite;
+    vertical-align:middle;margin-right:6px
+}
+
+  /* ── Estilos extra para la barra de citas ── */
+  .cita-banner{
+    background: #f0dae8;
+    border: 2px solid #a64d80;
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .cita-banner label{
+        font-size:16px;
+        font-weight:600;
+        color:#000;
+        white-space:nowrap;
+     }
+  .cita-banner select{
+    flex:1; min-width:220px;
+    padding: 9px 12px;
+    border-radius: 9px;
+    border: 1px solid #a36287;
+    font-size: 14px;
+    outline: none;
+    background: #f5ecf2;
+    font-weight: 500;
+  }
+  .btn-cita-cargar{
+    background: #c4195b;
+    color: #fff;
+    border: none;
+    border-radius: 9px;
+    padding: 9px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .2s;
+  }
+  .btn-cita-cargar:hover{
+    background-color: #c4195b;
+    box-shadow: 0 0 20px #c4195b;
+    color: #dad8d8;
+
+     }
+
+  /* Estado adicional: azul y gris */
+  .status-azul  { color: #1460a8; }
+  .status-gris  { color: #7a7a7a; }
+
+  /* Chip rápido de cambio de estado desde la lista */
+  .quick-estado{
+    font-size: 11px;
+    padding: 3px 9px;
+    border-radius: 20px;
+    border: 1.5px solid #dcc8e0;
+    background: #fff;
+    cursor: pointer;
+    margin-left: 6px;
+    color: #5a3a6b;
+    font-weight: 600;
+  }
+  .quick-estado:hover{ background: #f0e6f6; }
+
+@keyframes spin{to{transform:rotate(360deg)}}
+ 
+@media(max-width:600px){
+    .row2,.row3{
+    grid-template-columns:1fr
+    }
+    .vital-row{
+    flex-wrap:wra
+    }
+    .search{
+    width:100%
+    }
+}

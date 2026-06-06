@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+}
+
+body {
+    font-family: "Fredoka", sans-serif;
+    background-image: url(../img/Img_Citas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 105vh;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    font-size: 80px;
+    margin-top: -10px;
+}
+.Contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #efcde0;
+    width: 90%;
+    max-width: 1200px;
+    padding: 40px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 80px;
+}
+/* IZQUIERDA */
+.lado-izq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+/* PERFIL */
+.img-perfil{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #c4195b;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* DATOS */
+.datos{
+    border-left: #ad0e3e solid 5px;
+    width: 55%;
+ padding-left: 30px;
+}
+.dat{
+    font-size: 42px;
+    font-weight: 600;
+    margin: 12px;
+}
+.usuario{
+    color: #001f44;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 12px;
+}
+
+.usuaper{
+    margin: 0;
+}
+
+
+/* BOTON EDITAR */
+.btn-Edit {
+    display: block;
+    margin: 30px auto;
+    padding: 15px 40px;
+    background-color: #c4195b;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-g{
+    text-decoration: none;
+}
+.btn-Edit:hover{
+    background-color: #ad0e3e;
+    box-shadow: 0 0 40px #c4195b;
+}
+
+/* BOTON PLAN */
+.btn-plan{
+    display: block;
+    margin: 30px auto;
+    padding: 15px 40px;
+    background-color: #ff8fa0;
+    border: none;
+    border-radius: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0;
+}
+.btn-p{
+    text-decoration: none;
+}
+.btn-p:hover{
+    border-radius: 20px;
+    box-shadow: 0 0 20px #ec415b;
+}
+
+/* BOTON REGRESO */
+/* BOTON */
+.btn-servicio{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.btn-servicio img{
+    width: 100px;
+    background: #c4195b;
+    border-radius: 10px;
+    padding: 10px;
+}
+.btn-servicio img:hover{
+    background-color: #ad0e3e;
+    box-shadow: 0 0 40px #c4195b;
+}
+
+/* TABLET */
+@media (max-width: 1024px){
+.Contenido{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .lado-izq{
+        width: 100%;
+    }
+
+    .datos{
+        width: 100%;
+        border-left: none;
+        border-top: 5px solid #ad0e3e;
+        padding-top: 20px;
+    }
+
+    .dat{
+        font-size: 30px;
+    }
+
+    .usuario{
+        font-size: 28px;
+    }
+    .btn-servicio img{
+        opacity: .7;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 768px){
+
+    .Contenido{
+        margin-top: 10px;
+    }
+    h1{
+        font-size: 60px;
+    }
+
+    .img-perfil{
+        width: 150px;
+        height: 150px;
+    }
+
+    .img-edit{
+        width: 40px;
+    }
+
+    .dat{
+        font-size: 25px;
+    }
+
+    .usuario{
+        font-size: 25px;
+    }
+    .btn-servicio img{
+        opacity: 0.3;
+    }
+
+}

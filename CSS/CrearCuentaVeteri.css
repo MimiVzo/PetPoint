@@ -1,0 +1,194 @@
+*{
+    font-family: "Fredoka", sans-serif;
+}
+
+body {
+    font-family: "Fredoka", sans-serif;
+    background-image: url(../img/Img_Crearcuenta.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 95vh;
+    margin: 0;
+}
+
+.cont-crear {
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+    width: 700px;
+    height: 855px;
+    background-color: #96c6b5;
+    text-align: center;
+    margin-right: 180px;
+    border-radius: 40px;
+    margin-top: 50px;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    font-size: 65px;
+    margin: 0;
+}
+h2 {
+    text-align: center;
+    font-size: 30px;
+    justify-self: start;
+    color: #ad0e3e;
+    font-weight: 490;
+    margin-left: 30px;
+    margin-bottom:0;
+    
+}
+
+/* NOMBRES */
+.datos {
+    display: inline-block;
+    margin: 10px;
+    background-color: #f8d9e2;
+    border-radius: 20px;
+    border: solid 3px #a64d80;
+    color: #a64d80;
+    font-size: 20px;
+    outline: none;
+    justify-self: center;
+    width: 42.2%;
+    height: 55px;
+    margin-bottom: 0;
+}
+.datos::placeholder{
+    color: #c4195b;
+    font-size: 30px;
+    font-weight: 500;
+    padding-left:10px;
+}
+
+/* FECHA NACI */
+.date {
+    background-color: #f8d9e2;
+    border-radius: 10px;
+    border: solid 4px #a64d80;
+    color: #c4195b;
+    font-size: 20px;
+    display: grid;
+    outline: none;
+    justify-self: center;
+    margin: 20px;
+    width: 90%;
+    height: 55px;
+}
+.date::placeholder{
+    background-color: #a64d80;
+}
+
+/* GÉNEROS */
+.gen {
+    display: inline-block;
+    color: #ad0e3e;
+    background-color: #ffdde7;
+    border: #a64d80 solid 4px;
+    border-radius: 10px;
+    font-size: 30px;
+    margin: 15px;
+    width: 26%;
+    height: 50px;
+    align-content: center;
+}
+.gen::placeholder{
+    background: #a64d80;
+}
+
+/* CORREO PASSW */
+.input-cont {
+    background-color: #f8d9e2;
+    border-radius: 20px;
+    margin: 35px;
+    border: solid 4px #a64d80;
+    color: #a64d80;
+    font-size: 20px;
+    display: grid;
+    outline: none;
+    justify-self: center;
+    width: 90%;
+    height: 50px;
+}
+.input-cont::placeholder{
+    color: #c4195b;
+    font-size: 30px;
+    font-weight: 500;
+    padding-left:10px;
+}
+
+/* BOTON GUARDAR DATOS */
+.btn-entrar {
+    text-decoration: none;
+    width: 200px;
+    height: 60px;
+    background-color: #c4195b;
+    border: #c4195b;
+    font-weight: 500;
+    font-size: 35px;
+    color: #fff;
+    border-radius: 20px;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 20px;
+}
+.btn-entrar a {
+text-decoration: none;
+color: #fff;
+font-family: "Fredoka", sans-serif;
+}
+.btn-entrar:hover {
+    background-color: #ae0345;
+    box-shadow: 0 0 20px #c4195b;
+
+}
+
+
+/* TABLET */
+@media (max-width: 1024px){
+    h1{
+        font-size: 65px;
+    }
+    .cont-crear {
+        justify-self: center;
+        align-self: center;
+        width: 700px;
+        height: 860px;
+        margin-right: 0;
+        border-radius: 40px;
+        margin-top: 50px;
+    }
+}
+
+
+/* CELULAR */
+@media (max-width: 768px){   
+    h1{
+        font-size: 50px;
+        margin: 0;
+    }
+    h2{
+        font-size: 25px;
+    }
+    .cont-crear {
+        width: 450px;
+        height: 820px;
+        margin-right: 0;
+        border-radius: 40px;
+        margin-top: 50px;
+    }
+    .gen{
+        font-size: 20px;
+        width: 25%;
+        margin: 10px;
+    }
+    .datos::placeholder{
+        font-size: 25px;
+    }
+    .input-cont::placeholder{
+        font-size: 25px;
+    }
+}

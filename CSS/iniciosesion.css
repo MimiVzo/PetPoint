@@ -1,0 +1,153 @@
+*{
+   font-family: "Fredoka", sans-serif; 
+}
+body{
+    font-family: "Fredoka", sans-serif;
+    background-image: url(../img/Img_iniciosesion.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    font-size: 90px;
+    padding-top: 20px;
+    font-weight: 800;
+    margin: 0;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 810px;
+    height: 810px;
+    background-color: #96c6b5;
+    border-radius: 30px;
+    margin-top: 60px;
+    margin-left: 95px;
+}
+/* inpts */
+.div-input{
+    width: 100%;
+}
+.input-cont{
+    background-color: #f8d9e2;
+    border-radius: 10px;
+    width: 90%;
+    height: 70px;
+    margin: 20px 0;
+    border: solid 3px #a64d80;
+    color: #a64d80;
+    font-size: 20px;
+    display: grid;
+    outline: none;
+    justify-self: center;
+}
+.input-cont::placeholder{
+    color: #c4195b;
+    font-size: 30px;
+    font-weight: 500;
+    
+}
+
+
+/* BOTON ENTRAR */
+.btn-entrar{
+    height: 70px;
+    background-color: #c4195b;
+    border: none;
+    font-weight: 500;
+    font-size: 35px;
+    color: #fff;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px;
+    cursor: pointer;
+}
+.btn-entrar:hover{
+    background-color: #ad0e3e;
+    box-shadow: 0 0 40px #ad0e3e;
+}
+
+/* texto/linea */
+.linea{
+    width: 90%;
+    border-top: solid 3px #c4195b;
+    margin: 0;
+
+}
+.regis-txt{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* BOTON REGISTAR */
+.btn-registrar{
+    width: 280px;
+    height: 80px;
+    padding: 10px;
+    background-color: #c4195b;
+    border: #c4195b;
+    font-weight: 600;
+    font-size: 35px;
+    border-radius: 20px;
+    margin: 30px;
+}
+.btn-registrar a{
+    color: #fff;
+    text-decoration: none;
+}
+.btn-registrar:hover{
+    background-color: #ad0e3e;
+    box-shadow: 0 0 40px #ad0e3e;
+}
+
+/* TABLET */
+@media (max-width: 1024px){
+    .content{
+        width: 710px;
+        height: 710px;
+    }
+    h1{
+        font-size: 60px;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 768px){
+    .content{
+        width: 450px;
+        height: 610px;
+        margin-top: 0;
+        margin-left: 0;
+        margin: 20px;
+        margin-top: 150px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    .regis-txt{
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .btn-entrar{
+        font-size: 30px;
+        margin: 0;
+    }
+    .btn-registrar{
+        width: 200px;
+        height: 70px;
+        padding: 10px;
+        font-size: 30px;
+        margin: 15px;
+    }
+}
+
+@media only screen and (max-width: 360px) and (max-width){
+
+}
+

@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+}
+
+body {
+    background-image: url(../img/Img_Citas.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* CONTENEDOR */
+.contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* TARJETA */
+.tabla{
+    background-color: #ecdde5;
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin: 60px;
+    margin-bottom: 10px;
+}
+
+/* TITULO */
+h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.mod-nom{
+    display: block;
+    font-size: 25px;
+    color: #001f44;
+    margin-bottom: 20px;
+}
+
+/* LABELS */
+.servicio{
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 15px 0 5px;
+}
+
+/* INPUTS */
+.input-mod{
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 3px solid #a64d80;
+    background-color: #f8d9e2;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* FILA FECHA Y HORA */
+.fila{
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.input-modi{
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 3px solid #a64d80;
+    background-color: #f8d9e2;
+    font-size: 16px;
+}
+
+/* CONTENEDOR DEL BOTON */
+.contenedor-boton{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    clear: both; 
+    margin-top: 20px;
+}
+
+/* BOTON */
+.btn-guardar{
+    background-color: #c4195b;
+    color: white;
+    border-radius: 20px;
+    padding: 15px 40px;
+    font-size: 28px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-guardar:hover{
+    background-color: #ad0e3e;
+    box-shadow: 0 0 20px #c4195b;
+}
+
+/* BOTON REGRESO (abajo izquierda) */
+.btn-servicio{
+    position: fixed;
+    bottom: 20px;
+    left: 90%;
+    z-index: 1000;
+}
+
+.btn-servicio img{
+    width: 90px;
+    background: #c4195b;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.btn-servicio img:hover{
+    background-color: #ad0e3e;
+    box-shadow: 0 0 20px #c4195b;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 768px){
+
+    h1{
+        font-size: 35px;
+    }
+
+    .mod-nom{
+        font-size: 28px;
+    }
+
+    .servicio{
+        font-size: 28px;
+    }
+
+    .fila{
+        flex-direction: column;
+    }
+
+    .botones{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-guardar{
+        width: 100%;
+    }
+
+    .btn-servicio{
+        left: 75%;
+    }
+
+}

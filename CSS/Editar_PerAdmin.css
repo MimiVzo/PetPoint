@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+}
+
+body {
+    background-image: url(../img/Img_Citas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    min-height: 100vh;
+
+}
+
+/* TITULO */
+h1{
+    text-align: center;
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+/* CONTENEDOR GENERAL */
+.Contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #efcde0;
+    border-radius: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+/* LADO IZQUIERDO */
+.lado-izq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.img-perfil{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #c4195b;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.img-edit{
+    width: 60px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.img-edit:hover{
+    box-shadow: 0 0 20px #c4195b;
+    border-radius: 45%;
+}
+
+/* LADO DERECHO */
+.datos{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-left: 5px solid #ad0e3e;
+    padding: 20px;
+    min-width: 250px;
+}
+
+
+/* LABEL */
+.dat{
+    font-size: 28px;
+    font-weight: 600;
+}
+/* INPUTS */
+.input-cont{
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: solid 3px #a64d80;
+    background-color: #f8d9e2;
+    font-size: 18px;
+    outline: none;
+}
+.input-cont::placeholder{
+    color: #c4195b;
+}
+
+
+/* BOTON GUARADAR */
+.btn-guardar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    background-color: #c4195b;
+    color: white;
+    border-radius: 20px;
+    padding: 25px 40px;
+    font-size: 28px;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+}
+.btn-guardar:hover{
+    background-color: #ad0e3e;
+    box-shadow: 0 0 20px #ad0e3e;
+}
+
+/* BOTON REGRESO */
+.btn-servicio{
+    display: flex;
+    position: absolute;
+    text-decoration: none;
+    font-weight: 600;
+    left: 90%;
+    margin-bottom: 150px;
+    height: 80px;
+    width: 80px;
+    background-color: #c4195b;
+    justify-self: center;
+    align-self: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+.btn-servicio:hover{
+    background-color: #ad0e3e;
+    box-shadow: 0 0 20px #ad0e3e;
+}
+
+/* DIAS SEMANA */
+.dias-semana {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.dia-check {
+    background: #f8d9e2;
+    border: solid 3px #a64d80;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dia-check input {
+    margin-right: 5px;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 768px){
+    
+    body{
+        min-height: 200vh;
+    }
+
+    h1{
+        font-size: 35px;
+    }
+
+    .Contenido{
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .datos{
+        border-left: none;
+        border-top: 5px solid #ad0e3e;
+    }
+
+    .btn-guardar{
+        width: 50%;
+        text-align: center;
+    }
+    .btn-servicio{
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        padding: 10px;
+        left: 43%;
+        margin-top: 230px;
+    }
+}

@@ -1,0 +1,52 @@
+*{
+    font-family: "Fredoka", sans-serif;
+}
+body {
+    font-family: "Fredoka", sans-serif;
+    background-image: url(../img/Img_Citas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.plan-card {
+    background: #f6c1c7;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.plan-card:hover {
+    transform: scale(1.03);
+}
+
+.destacado {
+    border: 3px solid #c2185b;
+    transform: scale(1.05);
+    background: #f4aeb6;
+}
+
+.btn-custom {
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.badge-popular {
+    background: #ffcc00;
+    color: black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.container{
+    background-color: #efcde0;
+    border-radius: 20px;
+}
+
+.plan{
+    background: #FF8FA0;
+}

@@ -1,0 +1,459 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+}
+
+body {
+    font-family: "Fredoka", sans-serif;
+    background-image: url(../img/Img_Citas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height:100vh;
+    height: 100%;
+    margin: 0;
+}
+
+
+/* ===== VISTA MASCOTAS ===== */
+#vista-mascotas{
+    padding:28px 20px;
+    max-width:980px;
+    margin:30px auto;
+    background: #f0dae8;
+    border-radius: 20px;
+}
+/* titilo header */
+.page-title{
+    font-size:65px;
+    font-weight:800;
+    text-align:center;
+    margin-bottom:4px
+}
+.page-sub{
+    font-size:18px;
+    font-weight: 500;
+    color:#001f44;
+    text-align:center;
+    margin-bottom:22px
+}
+/* datos cart */
+.owner-card{
+    background:#ffdde7;
+    border-radius:16px;
+    border:2px solid #a64d80;
+    padding:16px 18px;
+    margin-bottom:20px;
+    display:flex;
+    align-items:center;
+    gap:14px
+}
+.owner-avatar{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#d4719a,#c97aaa);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    flex-shrink:0;
+    border:2px solid #a64d80;
+}
+.owner-info{
+    flex:1
+}
+.owner-name{
+    font-size:25px;
+    font-weight:900;
+}
+.owner-email{
+    font-size:14px;
+    color:#9a7a8a;
+    margin-top:2px
+}
+.owner-stats{
+    display:flex;
+    gap:12px;
+    margin-top:6px;
+    flex-wrap:wrap
+}
+.o-stat{
+    font-size:14px;
+    font-weight:700;
+    color:#ad0e3e
+}
+/* Macotas regis */
+.section-lbl{
+    font-size:20px;
+    font-weight:800;
+    color:#ad0e3e;
+    text-transform:uppercase;
+    letter-spacing:.6px;
+    margin-bottom:14px;
+    padding-bottom:7px;
+    border-bottom:1.5px solid #f0dae8
+}
+.hint{
+    text-align:center;
+    font-size:14px;
+    color:#c9a0b8;
+    margin-bottom:14px
+}
+/* Mascotas cards */
+.mascotas-grid{
+    display:grid;
+    grid-template-columns:4fr 4fr;
+    gap:20px
+}
+.mascota-card{
+    background:#ffdde7;
+    border-radius:16px;
+    border:2px solid #a64d80;
+    padding:18px 14px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:8px;
+    cursor:pointer;
+    transition:all .2s;
+    box-shadow:0 2px 8px #ff1c7a71;
+    text-align:center
+    }
+.mascota-card:hover{
+    border-color:#d4719a;
+    background: #f3bdd4;
+    box-shadow:0 4px 18px #d4719a22;
+    transform:translateY(-2px)
+}
+
+.m-emoji{
+    border:1px solid #a64d80;
+    font-size:46px;
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center
+    }
+.m-nombre{
+    font-size:28px;
+    font-weight:700;
+}
+.m-raza{
+    font-size:18px;
+    color:#001f44;
+    font-weight:500
+}
+.m-chips{
+    display:flex;
+    gap:5px;
+    justify-content:center;
+    flex-wrap:wrap
+}
+.m-chip{
+    padding:2px 8px;
+    border-radius:8px;
+    font-size:14px;
+    font-weight:700
+}
+.chip-green{
+    background:#d4eddf;
+    color:#085041;
+    border: 1px solid #085041;
+}
+.chip-red{
+    background:#fee2e2;
+    color:#791f1f;
+    border: 1px solid #791f1f;
+}
+.chip-gray{
+    background:#f0dae8;
+    color:#7a2a5a;
+    border: 1px solid #7a2a5a;
+}
+.ver-hist{
+    font-size:12px;
+    color:#c97aaa;
+    font-weight:700;
+    margin-top:2px
+}
+
+/* Sin mascotas */
+.empty-mascotas{
+    text-align:center;
+    padding:50px 20px;
+    color:#c9a0b8;
+    grid-column:1/-1
+}
+.empty-mascotas .ico{
+    font-size:48px;
+    margin-bottom:12px
+}
+.empty-mascotas p{
+    font-size:14px;
+    font-weight:600
+}
+
+/* ===== VISTA HISTORIAL ===== */
+#vista-historial{
+    display:none;
+    max-width:780px;
+    margin:30px auto;
+    border-radius: 22px;
+}
+
+.det-header{
+    padding:22px 20px 56px;
+    border-start-start-radius: 20px;
+    border-top-right-radius:20px ;
+}
+/* boton regresar */
+.det-back{
+    background:#c4195b;
+    padding: 10px;
+    border:none;
+    color:white;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:6px;
+    margin-bottom:14px;
+    border-radius: 10px;
+}
+.det-back:hover{
+    background-color: #c4195b;
+    box-shadow: 0 0 20px #c4195b;
+    color: #dad8d8;
+}
+/* header mascota */
+.det-top{
+    display:flex;
+    align-items:center;
+    gap:14px
+}
+.det-avatar-big{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;      
+    justify-content:center;
+    font-size:38px;
+    background:rgba(255,255,255,.2);
+    border:2px solid #a64d80;
+}   
+.det-title{
+    font-size:40px;
+    font-weight:700;
+    color:white;
+    letter-spacing: 1px;
+}
+.det-sub{
+    font-size:18px;
+    color:rgba(255,255,255,.82);
+    margin-top:3px
+}
+/* Carta mascota */
+.det-body{
+    background:#f0dae8;
+    border-radius:22px;
+    margin-top:-24px;     
+    padding:22px 18px;
+    min-height:60vh;
+    border: 2px solid #a64d80;
+}
+
+/* cuadros stast */
+.stats-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:12px;
+    margin-bottom:22px
+}
+.stat-card{
+    background:#ffdde7;
+    border-radius:14px;
+    border: 1.5px solid #a64d80;
+    padding:14px 10px;
+    text-align:center
+}
+.stat-num{
+    font-size:38px;
+    font-weight:700
+}
+.sn-pink{
+    color:#d4719a
+} 
+.sn-green{
+    color:#27a07a
+} 
+.sn-red{
+    color:#e24b4a
+}
+.stat-lbl{
+    font-size:20px;
+    color:#ad0e3e;
+    font-weight:500;
+    margin-top:3px;
+    line-height:1.4
+}
+/* Titlo historial */
+.hist-label{
+    font-size:25px;
+    font-weight:800;
+    color:#ad0e3e;
+    text-transform:uppercase;
+    letter-spacing:.6px;
+    margin-bottom:16px;
+    padding-bottom:7px;
+    border-bottom:2px solid #ad0e3e
+}
+/* linea de tiempo */
+.timeline{
+    position:relative;
+    padding-left:24px
+}
+.timeline::before{
+    content:'';
+    position:absolute;
+    left:6px;
+    top:4px;
+    bottom:4px;
+    width:2px;
+    background:linear-gradient(to bottom,#d4719a,#f0dae8)
+}
+/* Card Historial */
+.tl-item{
+    position:relative;
+    margin-bottom:14px;
+}
+.tl-dot{
+    position:absolute;
+    left:-24px;
+    top:14px;
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    border:2.5px solid #a64d80;
+    background:#ffdde7
+}
+.tl-dot.completada{
+    background:#d4719a;
+    border-color:#d4719a;
+    border: 1px solid #d4719a;
+}
+.tl-dot.cancelada{
+    background:white;
+    border-color:#f09595;
+    border: 1px solid #f09595;
+
+}
+.tl-dot.pendiente{
+    background:#ffd166;
+    border-color:#f0a030;
+    border: 1px solid #f0a030;
+}
+
+.tl-box{
+    background:#ffdde7;
+    border-radius:13px;
+    border:2px solid #a64d80;
+    padding:12px 15px;
+    transition:all .2s;
+    box-shadow:0 2px 6px #d4719a08
+}
+.tl-box:hover{
+    border-color:#c97aaa;
+    box-shadow:0 4px 14px #d4719a15
+}
+.tl-date{
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:4px
+}
+.tl-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    flex-wrap:wrap
+}
+.tl-name{
+    font-size:16px;
+    font-weight:600;
+    color:#001f44
+}
+.tl-place{
+    font-size:14px;
+    color:#ad0e3e;
+    margin-top:2px;
+    font-weight:600
+}
+/* Asitencias historial */
+.badge{
+    padding:3px 10px;
+    border-radius:9px;
+    font-size:16px;
+    font-weight:700;
+    white-space:nowrap
+}
+.b-completada{
+    background:#d4eddf;
+    color:#085041;
+    border: 1px solid #085041;
+}
+.b-cancelada{
+    background:#fee2e2;
+    color:#791f1f;
+    border: 1px solid #791f1f;
+}
+.b-pendiente{
+    background:#fff3cd;
+    color:#856404;
+    border: 1px solid #856404;
+}
+/* dat no hay mascotas */
+.empty-state{
+    text-align:center;
+    padding:40px 20px;
+    color:#c9a0b8
+}
+.empty-state .ico{
+    font-size:40px;
+    margin-bottom:10px
+}
+.empty-state p{
+    font-size:16px;
+    font-weight:600
+}
+
+/* BOTON REGRESO SERVICIOS*/
+.btn-s{
+
+    justify-self: end;
+    align-self: end;
+}
+.btn-servicio{
+    display: inline-block;
+    text-decoration: none;
+}
+.btn-servicio img{
+    height: 80px;
+    width: 80px;
+    background-color: #c4195b;
+    justify-self: end;
+    align-self: end;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px;
+}
+.btn-servicio img:hover{
+    background-color: #ad0e3e;
+    box-shadow: 0 0 20px #ad0e3e;
+}

@@ -1,0 +1,267 @@
+*{
+    font-family: "Fredoka", sans-serif;
+}
+
+body {
+    font-family: "Fredoka", sans-serif;
+    background-image: url(../img/Img_InicioUsua.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    margin: 0;
+}
+
+.cont-crear {
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+    width: 700px;
+    height: 850px;
+    background-color: #96c6b5;
+    text-align: center;
+    margin-right: 180px;
+    border-radius: 40px;
+    margin-top: 50px;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    font-size: 80px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+h2 {
+    text-align: center;
+    font-size: 35px;
+    justify-self: start;
+    color: #ad0e3e;
+    font-weight: 490;
+    margin-left: 30px;
+    margin-bottom:0;
+    
+}
+
+/* NOMBRES */
+.datos {
+    display: inline-block;
+    margin: 10px;
+    background-color: #f8d9e2;
+    border-radius: 20px;
+    border: solid 3px #a64d80;
+    color: #a64d80;
+    font-size: 20px;
+    outline: none;
+    justify-self: center;
+    width: 42.2%;
+    height: 55px;
+}
+.datos::placeholder{
+    color: #c4195b;
+    font-size: 30px;
+    font-weight: 500;
+    padding-left:10px;
+}
+
+/* FECHA NACI */
+.date {
+    background-color: #f8d9e2;
+    border-radius: 10px;
+    border: solid 4px #a64d80;
+    color: #a64d80;
+    font-size: 20px;
+    display: grid;
+    outline: none;
+    justify-self: center;
+    margin: 20px;
+    width: 90%;
+    height:55px;
+}
+
+/* GENEROS */
+.gen {
+    display: inline-block;
+    color: #ad0e3e;
+    background-color: #ffdde7;
+    border: #a64d80 solid 4px;
+    border-radius: 10px;
+    font-size: 30px;
+    margin: 15px;
+    width: 26%;
+    height: 50px;
+    align-content: center;
+}
+
+/* CORREO PASSW */
+.input-cont {
+    background-color: #f8d9e2;
+    border-radius: 20px;
+    margin: 35px;
+    border: solid 4px #a64d80;
+    color: #a64d80;
+    font-size: 20px;
+    display: grid;
+    outline: none;
+    justify-self: center;
+    width: 90%;
+    height: 55px;
+}
+.input-cont::placeholder{
+    color: #c4195b;
+    font-size: 30px;
+    font-weight: 500;
+    padding-left:10px;
+}
+
+/* BOTON GUARDAR DATOS */
+.btn-entrar {
+    text-decoration: none;
+    width: 200px;
+    height: 60px;
+    background-color: #c4195b;
+    border: #c4195b;
+    font-weight: 500;
+    font-size: 35px;
+    color: #fff;
+    border-radius: 20px;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 20px;
+}
+.btn-entrar a {
+text-decoration: none;
+color: #fff;
+font-family: "Fredoka", sans-serif;
+}
+.btn-entrar:hover {
+    background-color: #ae0345;
+    box-shadow: 0 0 40px #ae0345;
+    cursor: pointer;
+}
+
+/* BOTON REDISTRA VETERINARIO */
+.regis{
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 760px;
+    left: 650px;
+    border-radius: 80px;
+    border: none;
+    background-color: transparent;
+    font-size: 0;
+
+}
+
+.regis a{
+    color: transparent;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+}
+.regis img{
+    opacity: 0;
+}
+@media (max-width: 1700px){
+     .regis{
+        left: 34%;
+    }
+}
+@media (max-width: 1450px){
+    .regis{
+        left: 30%;
+    }
+}
+
+/* APARECE BOTON VETREGIS */
+@media (max-width: 1400px){
+    .regis{
+        position: absolute;
+        width: auto;
+        height: auto;
+        border-radius: 30px;
+        border: none;
+        font-size: 30px;
+        top: 95%;
+        left: 48%;
+        padding: 20px;
+        justify-self: center;
+        align-self: center;
+        margin-bottom: 50px;
+        background: #c4195b;
+    }
+    .regis a{
+        color: #FFF;
+        text-decoration: none;
+        text-align: center;
+    }
+    .regis img{
+        position: absolute;
+        justify-self: center;
+        align-self: center;
+    }
+    .regis:hover{
+    background-color: #ae0345;
+    box-shadow: 0 0 40px #ae0345;
+}
+}
+@media (max-width: 1300px){
+    .regis{
+        left: 44%;
+    }
+}
+@media (max-width: 1200px){
+    .regis{
+        left: 40%;
+    }
+}
+@media (max-width: 1100px){
+    .regis{
+        left: 30%;
+    }
+}
+
+
+
+
+/* TABLET */
+@media (max-width: 1024px){
+    h1{
+        font-size: 70px;
+    }
+    .cont-crear {
+        justify-self: center;
+        align-self: center;
+        width: 700px;
+        height: 850px;
+        margin-right: 0;
+        border-radius: 40px;
+        margin-top: 50px;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 768px){
+
+    h1{
+        font-size: 50px;
+        margin: 0;
+    }
+    .cont-crear {
+        width: 450px;
+        height: 800px;
+        margin-right: 0;
+        border-radius: 40px;
+        margin-top: 50px;
+    }
+    .gen{
+        font-size: 20px;
+        width: 25%;
+        margin: 10px;
+    }
+    .regis{
+        top: 90%;
+        left: 12%;
+    }
+}
